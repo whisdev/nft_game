@@ -15,6 +15,7 @@ function App() {
 
   console.log(data);
 
+  //const mintNFT
   const mintNFT = (_account, _name) => {
     setLoading(true);
     blockchain.lipToken.methods
