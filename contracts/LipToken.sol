@@ -5,11 +5,13 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
+// 
 contract LipToken is ERC721, Ownable {
   constructor(string memory _name, string memory _symbol)
     ERC721(_name, _symbol)
   {}
 
+//ticket counter
   uint256 COUNTER;
 
   uint256 fee = 0.01 ether;
